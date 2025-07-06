@@ -1,6 +1,6 @@
-From python:3.8
+FROM python:3.8
 WORKDIR /app
-COPY ./app /app
+COPY . .
 RUN pip install flask
 EXPOSE 8080
 ENTRYPOINT ["python"]
